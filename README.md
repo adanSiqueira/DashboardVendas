@@ -1,74 +1,75 @@
-# Dashboard Interativo de Vendas para Franquia de Lojas 
+# Interactive Sales Dashboard for Store Franchise
 
-Este projeto consiste em um **Dashboard Interativo de Vendas**, desenvolvido com o objetivo de fornecer à gestão uma ferramenta intuitiva, visualmente impactante e altamente funcional para **análise de dados, acompanhamento de métricas e KPI's**, auxiliando na **tomada de decisões estratégicas**.
+This project consists of an **Interactive Sales Dashboard**, developed to provide management with an intuitive, visually impactful, and highly functional tool for **data analysis, monitoring KPIs and metrics**, and assisting in **strategic decision-making**.
 
-## Objetivos
+## Objectives
 
-- Prover uma **visualização clara e dinâmica** dos dados de vendas.
-- Facilitar o **monitoramento de indicadores-chave** (KPI's).
-- Permitir a **análise detalhada por região, categoria de produto, vendedor e período**.
-- Disponibilizar uma interface para **exploração e download de dados brutos**.
+- Provide a **clear and dynamic visualization** of sales data.
+- Facilitate the **monitoring of key performance indicators (KPIs)**.
+- Allow **detailed analysis by region, product category, salesperson, and time period**.
+- Offer an interface for **exploration and download of raw data**.
 
-## Tecnologias e Frameworks Utilizados
+## Technologies and Frameworks Used
 
-- **Python** — linguagem de programação principal.
-- **Streamlit** — para construção da interface web interativa.
-- **Pandas** — manipulação e tratamento de dados.
-- **Plotly Express** — geração de gráficos interativos e visuais impactantes.
-- **Requests** — obtenção de dados via API.
-- **NumPy** — suporte ao processamento numérico.
+- **Python** — main programming language.
+- **Streamlit** — for building the interactive web interface.
+- **Pandas** — for data manipulation and processing.
+- **Plotly Express** — for generating interactive and visually impactful charts.
+- **Requests** — for retrieving data via API.
+- **NumPy** — supports numerical processing.
 
-## Estrutura do Projeto
+## Project Structure
 
-O projeto foi cuidadosamente modularizado, promovendo **organização, reutilização de código e escalabilidade**:
+The project was carefully modularized to promote **organization, code reusability, and scalability**:
 
-- `app.py` — Arquivo principal, responsável pela interface, filtros, exibição de gráficos e métricas.
-- `load_data.py` — Módulo para **carregar dados de uma API pública**.
-- `preprocessing.py` — Responsável pelo **tratamento e geração das tabelas analíticas**.
-- `visualizations.py` — Funções para criação de **gráficos interativos** com Plotly.
-- `utils.py` — Utilitários, como função para **formatar números monetários**.
-- `pages/Dados_brutos.py` — Página dedicada à **exploração e download dos dados brutos**, com múltiplos filtros customizáveis.
+- `app.py` — Main file responsible for the interface, filters, chart display, and metrics.
+- `load_data.py` — Module for **loading data from a public API**.
+- `preprocessing.py` — Responsible for **processing and generating analytical tables**.
+- `visualizations.py` — Functions for creating **interactive charts** with Plotly.
+- `utils.py` — Utilities such as a function to **format monetary values**.
+- `pages/Dados_brutos.py` — Page dedicated to **exploring and downloading raw data**, with multiple customizable filters.
 
-## Funcionalidades
+## Features
 
-✅ Filtros interativos por região, ano e vendedores.  
-✅ Gráficos de receita e quantidade de vendas por estado, mês e categoria de produto.  
-✅ Mapas geográficos para visualização espacial de vendas e receita.  
-✅ Análise de **top vendedores**, por receita e volume de vendas.  
-✅ Download de dados brutos, com filtros customizados e exportação em **CSV**.  
-✅ Modularização clara que facilita a **manutenção e expansão** do sistema.
+✅ Interactive filters by region, year, and salesperson.  
+✅ Revenue and sales quantity charts by state, month, and product category.  
+✅ Geographical maps for spatial visualization of sales and revenue.  
+✅ **Top salesperson** analysis, by revenue and sales volume.  
+✅ Raw data download with customizable filters and **CSV export**.  
+✅ Clear modularization that facilitates **system maintenance and expansion**.
 
-## Como Executar
+## How to Run
 
-1. Clone o repositório.
-2. Instale as dependências:  
+1. Clone the repository.
+2. Install the dependencies:  
    ```bash
    pip install -r requirements.txt
-
-3. Execute a aplicação:
+   ```
+3. Run the application:
   ```bash
   streamlit run app.py
   ```
 
-## Requisitos
-Python 3.10+
-Plotly 6.0.1
-Pandas 2.2.3
-Numpy 2.2.5
-Requests 2.32.3
+## Requirements
 
-## Diferenciais
-Design intuitivo e responsivo com layout em abas e colunas.
+- Python 3.10+
+- Plotly 6.0.1
+- Pandas 2.2.3
+- Numpy 2.2.5
+- Requests 2.32.3
 
-Uso de múltiplas páginas no Streamlit para separar análise de vendas e dados brutos.
+## Highlights
 
-Gráficos interativos que promovem uma análise exploratória rica.
+- Intuitive and responsive design with a tabbed and column-based layout.
+- Use of multiple Streamlit pages to separate sales analysis and raw data.
+- Interactive charts that support rich exploratory analysis.
+- Clean code architecture and modular design.
 
-Arquitetura clean code e orientada a modularização.
+## Data
 
-## Dados
-Os dados utilizados neste projeto são obtidos automaticamente de uma API pública de produtos:
-https://labdados.com/produtos
+The data used in this project is automatically retrieved from a public product API:  
+[https://labdados.com/produtos](https://labdados.com/produtos)
 
-## Resultados Esperados
-Este Dashboard possibilita uma visão estratégica e detalhada da operação de vendas da franquia, oferecendo insights valiosos para decisões relacionadas a marketing, estoque, desempenho regional e metas comerciais.
+## Expected Results
+
+This dashboard provides a strategic and detailed view of the franchise's sales operations, offering valuable insights for decisions related to marketing, inventory, regional performance, and business goals.
